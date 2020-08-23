@@ -45,7 +45,7 @@
             <section class="hero-section animate__bounceIn">
                 <div class="hero-section-div container">
                     <h1 class="title-name">Эффективные решения для вашего бизнеса</h1>
-                    <button class="modal-btn modal-btn1">Заказать услугу</button> 
+                    <button class="modal-btn modal-btn1" data-modal-open>Заказать услугу</button> 
                 </div>
             </section>
                 <!--О нас-->
@@ -351,5 +351,11 @@
             </div>
            
         </footer>
+        <div class="backdrop is-hidden " data-modal>
+            <div class="modal ">
+                <button data-modal-close class="modal-btn1">Закрыть</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
     </html>
