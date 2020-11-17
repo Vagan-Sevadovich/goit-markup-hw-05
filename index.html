@@ -30,11 +30,11 @@
                     <address class="header-adress">
                         <a class="header-mail link" href="info@devstudio.com">
                             <svg class="header-icon">
-                                <use href="./images/sprite.svg#envelope" width="16" height="11"></use>
+                                <use href="./images/sprite.svg#envelope" width="16" height="12"></use>
                             </svg> info@devstudio.com</a>
                         <a class="header-tel link" href="tel:+380961111111">
                             <svg class="header-icon2">
-                                <use href="./images/sprite.svg#smartphone" width="16" height="11"></use>
+                                <use href="./images/sprite.svg#smartphone" width="10" height="16"></use>
                             </svg>+38 096 111 11 11</a>
                     </address>
                 </nav>
@@ -348,12 +348,33 @@
                         </li>
                     </ul>
                 </div> 
+                <div class="footer-form">
+                    <p class="connected">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                    <form class="form-section">
+                        <input class="form-section-input" type="email" name="user-mail" placeholder="E-mail" required minlength="2">
+                        <button type="submit" class="modal-btn2 modal-btn">Подписаться</button>
+                    </form>
+                </div>
             </div>
            
         </footer>
         <div class="backdrop is-hidden " data-modal>
-            <div class="modal ">
-                <button data-modal-close class="modal-btn1">Закрыть</button>
+            <div class="modal">
+                <button data-modal-close class="modal-btn3">Закрыть</button>
+                <p class="contact-form-info">Оставьте свои данные, мы вам перезвоним</p>
+                <section class="contact-form-section">
+                    <form class="contact-form">
+                        <input type="text" class="contact-form-input" name="user-name" required minlength="2" placeholder="Igor">
+                        <input type="tel" class="contact-form-input" name="user-tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="096-111-11-11">
+                        <input type="email" class="contact-form-input" name="user-mail"  placeholder="qwerty@mail.com" required>
+                        <textarea class="contact-form-message" name="user-message" id="" cols="30" rows="10" placeholder="Комментарий" minlength="10" required></textarea>
+                        <section class="contact-form-checkbox">
+                            <input type="checkbox">
+                            <p>Соглашаюсь с рассылкой и принимаю Условия договора</p>
+                        </section>
+                        <button type="submit" class="modal-btn4">Отправить</button>
+                    </form>
+                </section>
             </div>
         </div>
         <script src="./js/modal.js"></script>
